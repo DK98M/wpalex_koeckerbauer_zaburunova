@@ -1,0 +1,7 @@
+{
+    "name": "alex-mayer",
+    "main": "index.js",
+    "scripts": {
+        "build": "echo \"lala\""
+    }   
+}

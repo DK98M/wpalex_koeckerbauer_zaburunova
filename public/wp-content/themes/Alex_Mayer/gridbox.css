@@ -1,0 +1,231 @@
+/*
+Theme Name: Alex_Mayer
+Author: Daniel Köckerbauer und Elizaveta Zaburunova
+Description: Theme for Alex Mayer
+Version 1.0
+Text Domain: alex_mayer
+Tags:
+This theme, like WordPress, is licensed under the GPL*/
+
+/* screen desktop */
+#clients{
+  margin-bottom: 50px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  height: max-content;
+}
+
+.references { 
+  grid-area: 1 / 1 / 4 / 9; 
+  display: inline-grid;
+}
+
+.article-tina {
+  display: inline-grid;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "img-tina . ."
+    "cite-tina cite-tina ."
+    "blockquote-tina blockquote-tina blockquote-tina";
+  grid-area: 1 / 1 / 4 / 4;
+}
+
+.img-tina { 
+  grid-area: img-tina;
+  background-color: #fffcdb; }
+
+.cite-tina { 
+  grid-area: cite-tina;
+  background-color: #fffcdb; 
+}
+
+.blockquote-tina { 
+  grid-area: blockquote-tina;
+  background-color: #fffcdb;
+}
+
+.article-tom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "cite-tom cite-tom img-tom"
+    ". blockquote-tom blockquote-tom"
+    ". . blue-tom";
+  grid-area: 1 / 2 / 4 / 5;
+}
+
+.cite-tom { 
+  display: flex;
+  flex-direction: column;
+  grid-area: cite-tom;
+  background-color: #cdedfb;
+}
+
+.img-tom { 
+  grid-area: img-tom;
+  background-color: #cdedfb;
+  max-width: 265px;
+ }
+
+
+.blockquote-tom { 
+  grid-area: blockquote-tom;
+  background-color: #cdedfb;
+}
+
+.blue-tom { 
+  grid-area: blue-tom;
+  background-color: #cdedfb;
+ }
+
+.quotationmark { 
+  grid-area: 1 / 5 / 4 / 6;
+  background-color: #03b7f1 }
+
+.article-vorstand {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". img-vorstand img-vorstand"
+    ". img-vorstand img-vorstand"
+    "cite-and-blockquote-vorstand cite-and-blockquote-vorstand cite-and-blockquote-vorstand";
+  grid-area: 1 / 5 / 4 / 9;
+}
+
+.img-vorstand { 
+  grid-area: img-vorstand;
+  background-color: #ddecd7; }
+
+.cite-and-blockquote-vorstand { 
+  display: flex;
+  flex-direction: column;
+  grid-area: cite-and-blockquote-vorstand;
+  background-color: #ddecd7;
+}
+
+img {
+      width: auto;
+      max-width: 300px;
+      margin: auto;
+    }
+
+
+/* fonts */
+cite {
+	font-family: slabo;
+	font-style: normal;
+	font-size: 19px;
+  margin: 20px;
+  margin-bottom: 0px;
+  align-self: flex-end;
+}
+
+p {
+  font-family: slabo;
+  font-size: 19px;
+  margin: 20px;
+  margin-top: 0px;
+  align-self: flex-end;
+}
+
+blockquote {
+  font-size: x-large;
+  font-style: normal;
+  font-family: slabo;
+  align-self: flex-end;
+  margin-right: 0px;
+}
+
+
+/* mobile screen */
+@media screen and (max-width: 1200px) {
+  main .container {
+    display: block;
+  }
+
+    main .article-tina {
+    background-color: #fffcdb;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+      "img-tina . . " 
+      "cite-tina . . " 
+      "blockquote-tina . .";
+    }
+
+    img {
+      width: auto;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    main .article-tom {
+    background-color: #03b7f1;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+      "img-tom . . " 
+      "cite-tom . . " 
+      "blockquote-tom . .";
+  }
+
+
+  main .article-vorstand {
+    background-color: #ddecd7;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+      "img-vorstand . . " 
+      "cite-vorstand . . " 
+      "cite-and-blockquote-vorstand . .";
+    }
+
+
+  main .img-vorstand { 
+    width: auto;
+    margin: auto; }
+
+  main .references { 
+    display: block;
+  }
+
+  main .cite-tom { 
+  grid-area: cite-tom;
+  background-color: #cdedfb;
+}
+
+  /* fonts */
+  main blockquote {
+    margin: 20px;
+    align-self: unset;
+
+  }
+
+  main p {
+      margin-bottom: 20px;
+      margin-left: 20px;
+      align-self: unset;
+
+    }
+
+  main cite {
+      margin-left: 20px;
+      align-self: unset;
+    }
+}

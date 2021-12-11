@@ -1,0 +1,546 @@
+/*
+Theme Name: Alex_Mayer
+Author: Daniel Köckerbauer und Elizaveta Zaburunova
+Description: Theme for Alex Mayer
+Version 1.0
+Text Domain: alex_mayer
+Tags:
+This theme, like WordPress, is licensed under the GPL
+*/
+
+@charset "UTF-8";
+#mobile-navbar-toggle {
+  float: right;
+  font-size: 3rem;
+  color: #03b7f1;
+  padding-right: 40px;
+}
+
+.news ul {
+  background-color: #f8dfd4;
+  border-radius: 2px;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+.news li {
+  list-style-type: none;
+}
+
+.navitem {
+  margin-top: -45px;
+  margin-bottom: -5px;
+}
+.navitem ul {
+  text-align: right;
+}
+.navitem li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+  text-align: right;
+}
+.navitem a:hover {
+  color: #03b7f1;
+  text-decoration: underline;
+}
+.navitem a {
+  color: black;
+  padding: 14px 16px;
+  font-size: 19px;
+  font-family: slabo;
+}
+
+h1 {
+  color: #03b7f1;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 52px;
+  font-family: slabo;
+}
+
+h2 {
+  font-family: slabo;
+}
+
+button {
+  background-color: #4CAF50;
+  text-align: center;
+  color: white;
+  border-radius: 4px;
+  height: 8%;
+  font-family: slabo;
+  font-size: 32px;
+  padding: 12px 32px;
+  border: none;
+}
+
+.inpicture {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.inpicture h2 {
+  color: #03b7f1;
+  background-color: white;
+  font-size: 52px;
+  font-family: slabo;
+  font-style: normal;
+  -webkit-box-decoration-break: clone;
+  -moz-background-inline-policy: clone;
+  box-decoration-break: clone;
+  width: 900px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.services {
+  display: flex;
+}
+.services ul {
+  text-align: center;
+  height: 500px;
+  margin: auto;
+}
+.services li {
+  list-style-type: none;
+  float: left;
+  margin-right: 1em;
+  margin-top: 5em;
+}
+.services a {
+  color: black;
+  font-size: 22px;
+  width: 320.2px;
+  height: 320.2px;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+main {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+footer {
+  background-color: #03b7f1;
+  padding-bottom:100px;
+}
+
+p {
+  font-family: slabo;
+  font-size: 19px;
+}
+
+a {
+  color: #03b7f1;
+  text-decoration: none;
+  font-family: slabo;
+  font-size: 19px;
+}
+
+.hero {
+  background-image: url("./images/illuminated-keyboard-1242287.jpg");
+  width: 100%;
+  height: 546.417px;
+  background-size: 100%;
+  display: flex;
+  align-content: center;
+  background-repeat: no-repeat;
+}
+
+#Design {
+  width: 320.2px;
+  height: 320.2px;
+  border-radius: 2px;
+  background-color: #fffcdb;
+  padding: 25px;
+}
+#Service > div > ul > li > section{
+  width: 320.2px;
+  height: 320.2px;
+  border-radius: 2px;
+  padding: 25px;
+}
+#Service > div > ul > li > section > img{
+  width: 90%;
+}
+
+#Strategie {
+  width: 320.2px;
+  height: 320.2px;
+  border-radius: 2px;
+  background-color: #cdedfb;
+  padding: 25px;
+}
+
+#Consulting {
+  width: 320.2px;
+  height: 320.2px;
+  border-radius: 2px;
+  background-color: #ddecd7;
+  padding: 25px;
+}
+
+.hovermenu {
+  display: none;
+  float: right;
+}
+
+.Footermenu p {
+  margin-bottom: -38px;
+  margin-top: 0px;
+  padding-top: 16px;
+  color: white;
+  font-size: 26px;
+}
+.Footermenu ul {
+  text-align: right;
+}
+.Footermenu li {
+  list-style-type: none;
+  display: inline;
+}
+.Footermenu a {
+  color: white;
+  font-size: 26px;
+}
+
+.Footertext p {
+  color: white;
+  font-size: 22px;
+  width: 40%;
+}
+.Footertext ul {
+  list-style: none;
+}
+.Footertext li p {
+  font-size: 17px;
+  margin-top: -18px;
+  margin-bottom: 0px;
+  width: 100%;
+}
+.Footertext ul li::before {
+  content: "•";
+  color: white;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+@media only screen and (max-width: 1200px) {
+  .services ul {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: auto;
+  }
+  .services li {
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .design {
+    width: auto;
+    background-size: 28%;
+    margin-bottom: 1em;
+  }
+
+  .strategy {
+    width: auto;
+    background-size: 28%;
+    margin-bottom: 1em;
+  }
+
+  .consulting {
+    width: auto;
+    background-size: 28%;
+    margin-bottom: 1em;
+  }
+
+  .inpicture h2 {
+    margin-top: 0px;
+    width: 700px;
+  }
+
+  .hero {
+    background-size: 200%;
+  }
+
+  .navitem a {
+    display: none;
+    border: 1px solid gray;
+  }
+  .navitem a:hover {
+    background-color: #03b7f1;
+    text-decoration: none;
+    color: white;
+  }
+  .navitem li {
+    text-align: left;
+  }
+  .navitem ul {
+    padding-left: 0px;
+  }
+
+  h1 {
+    margin-bottom: 44px;
+  }
+
+  .navbar-right ul {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+@font-face {
+  font-family: slabo;
+  src: url("./fonts/slabo-13px-v8-latin-regular.woff");
+}
+@media screen and (max-width: 1200px) {
+  .navitem {
+    padding: 60px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #navbar-right {
+    float: none;
+    text-align: left;
+    align-self: flex-start;
+  }
+}
+
+/* screen desktop */
+#clients{
+  margin-bottom: 50px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  height: max-content;
+}
+
+.references { 
+  grid-area: 1 / 1 / 4 / 9; 
+  display: inline-grid;
+}
+
+.article-tina {
+  display: inline-grid;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "img-tina . ."
+    "cite-tina cite-tina ."
+    "blockquote-tina blockquote-tina blockquote-tina";
+  grid-area: 1 / 1 / 4 / 4;
+}
+
+.img-tina { 
+  grid-area: img-tina;
+  background-color: #fffcdb; }
+
+.cite-tina { 
+  grid-area: cite-tina;
+  background-color: #fffcdb; 
+}
+
+.blockquote-tina { 
+  grid-area: blockquote-tina;
+  background-color: #fffcdb;
+}
+
+.article-tom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "cite-tom cite-tom img-tom"
+    ". blockquote-tom blockquote-tom"
+    ". . blue-tom";
+  grid-area: 1 / 2 / 4 / 5;
+}
+
+.cite-tom { 
+  display: flex;
+  flex-direction: column;
+  grid-area: cite-tom;
+  background-color: #cdedfb;
+}
+
+.img-tom { 
+  grid-area: img-tom;
+  background-color: #cdedfb;
+  max-width: 265px;
+ }
+
+
+.blockquote-tom { 
+  grid-area: blockquote-tom;
+  background-color: #cdedfb;
+}
+
+.blue-tom { 
+  grid-area: blue-tom;
+  background-color: #cdedfb;
+ }
+
+.quotationmark { 
+  grid-area: 1 / 5 / 4 / 6;
+  background-color: #03b7f1; }
+
+.article-vorstand {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". img-vorstand img-vorstand"
+    ". img-vorstand img-vorstand"
+    "cite-and-blockquote-vorstand cite-and-blockquote-vorstand cite-and-blockquote-vorstand";
+  grid-area: 1 / 5 / 4 / 9;
+}
+
+.img-vorstand { 
+  grid-area: img-vorstand;
+  background-color: #ddecd7; }
+
+.cite-and-blockquote-vorstand { 
+  display: flex;
+  flex-direction: column;
+  grid-area: cite-and-blockquote-vorstand;
+  background-color: #ddecd7;
+}
+
+img {
+  width: auto;
+  max-width: 300px;
+  margin: auto;
+  height: auto;
+}
+
+
+/* fonts */
+cite {
+	font-family: slabo;
+	font-style: normal;
+	font-size: 19px;
+  margin: 20px;
+  margin-bottom: 0px;
+  align-self: flex-end;
+}
+
+p {
+  font-family: slabo;
+  font-size: 19px;
+  margin: 20px;
+  margin-top: 0px;
+  align-self: flex-end;
+}
+
+blockquote {
+  font-size: x-large;
+  font-style: normal;
+  font-family: slabo;
+  align-self: flex-end;
+  margin-right: 0px;
+}
+
+
+/* mobile screen */
+@media screen and (max-width: 1200px) {
+  main .container {
+    display: block;
+  }
+
+    main .article-tina {
+    background-color: #fffcdb;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+      "img-tina . . " 
+      "cite-tina . . " 
+      "blockquote-tina . .";
+    }
+
+    img {
+      width: auto;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    main .article-tom {
+    background-color: #03b7f1;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+      "img-tom . . " 
+      "cite-tom . . " 
+      "blockquote-tom . .";
+  }
+
+
+  main .article-vorstand {
+    background-color: #ddecd7;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+      "img-vorstand . . " 
+      "cite-vorstand . . " 
+      "cite-and-blockquote-vorstand . .";
+    }
+
+
+  main .img-vorstand { 
+    width: auto;
+    margin: auto; }
+
+  main .references { 
+    display: block;
+  }
+
+  main .cite-tom { 
+  grid-area: cite-tom;
+  background-color: #cdedfb;
+}
+
+  /* fonts */
+  main blockquote {
+    margin: 20px;
+    align-self: unset;
+
+  }
+
+  main p {
+      margin-bottom: 20px;
+      margin-left: 20px;
+      align-self: unset;
+
+    }
+
+  main cite {
+      margin-left: 20px;
+      align-self: unset;
+    }
+}
+
+
+/*# sourceMappingURL=style_index.css.map */
